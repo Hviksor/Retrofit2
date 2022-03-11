@@ -1,5 +1,6 @@
 package com.example.retrofit2.screens.start
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,8 +38,9 @@ class StartAdapter : RecyclerView.Adapter<StartAdapter.StartViewHolder>() {
         return adList.size
     }
 
-    fun updateAdapter(newlist: List<NalItem>) {
-        adList = newlist
+    @SuppressLint("NotifyDataSetChanged")
+    fun updateAdapter(newList: List<NalItem>) {
+        adList = newList
         notifyDataSetChanged()
 
     }
