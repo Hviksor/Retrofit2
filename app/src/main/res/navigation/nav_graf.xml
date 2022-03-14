@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graf"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/rootFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -20,4 +20,13 @@
         android:name="com.example.retrofit2.screens.start.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/rootFragment"
+        android:name="com.example.retrofit2.screens.root.RootFragment"
+        android:label="fragment_root"
+        tools:layout="@layout/fragment_root" >
+        <action
+            android:id="@+id/action_rootFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
 </navigation>
