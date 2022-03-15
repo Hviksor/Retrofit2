@@ -12,6 +12,12 @@
         android:gravity="right"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Start Fragment" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcViewStart"
         android:layout_width="match_parent"
