@@ -11,6 +11,7 @@ object RetrofitInstance {
             .baseUrl("https://api.privatbank.ua/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+
     }
 
     val api: ApiService by lazy {
